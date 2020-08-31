@@ -1,0 +1,30 @@
+Title: Indigency "Flowchart"
+Author: Joelle Ataya	
+Before: <link rel="stylesheet" type="text/css" href="https://suffolklitlab.org/howto/qna/style/style.css">
+<div id="icon" style="background-size: 110px 99px;background-image: url('https://suffolklitlab.org/howto/qna/images/maxheadroom.gif');"></div>
+<h2 style="text-align:center;">Indigency "Flowchart"</h2>
+<p><b>This is a <a href="https://www.codingthelaw.org/level/2/#mission_p1">class project</a>. You should not rely on it as a source of legal information!</b></p>
+<p>Answer the following questions to see if you qualify for appointed counsel in Washington .</p>
+
+
+Q(waive):Do you wish to waive your right to public counsel?
+A: Yes
+	Q(1.1):GOTO:Ineligible
+A: No
+	Q(1.2):GOTO:public
+Q(public):At any time during court proceedings, are you receiving any public assistance? (i.e. for any medical disability, veteran disability, refugee benefits, food stamp benefits, etc.)
+A: Yes
+	Q(2.1):GOTO:eligible
+A: No
+	Q(2.2):GOTO:guidelines
+Q(guidelines):Do you make 125% or less than the Federal Poverty Guidelines? (i.e. $21,550 for a 2 person household. Add $5,600 for each additional person)
+A: Yes
+	Q(3.1):GOTO:eligible
+A: No
+	Q(3.2):GOTO:Ineligible
+
+
+
+
+Q(eligible): You are eligible to receive appointed counsel.
+Q(ineligible): You are ineligible to receive appointed counsel.
